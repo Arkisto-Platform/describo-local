@@ -2,6 +2,7 @@
 
 GITHUB_RAW_ENDPOINT="https://raw.githubusercontent.com/Arkisto-Platform/describo-local/master"
 FILES="
+    run-describo.sh
     docker-compose.yml 
     describo-configuration.json 
     nginx.conf 
