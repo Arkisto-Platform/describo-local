@@ -14,13 +14,13 @@ FILES="
 
 setup() {
     mkdir -p $PWD/describo-local && cd $PWD/describo-local
-    mkdir -p reva_configuration
+    mkdir -p reva-configuration
 
     # get all the required bits
     echo "Retrieving configuration"
     for file in $FILES ; do
         if [ ! -f "describo-local/${file}" ] ; then
-            curl --silent --output "$PWD/${file}" "${GITHUB_RAW_ENDPOINT}/${file}"
+            curl --silent --output "./${file}" "${GITHUB_RAW_ENDPOINT}/${file}"
         fi
     done
 
