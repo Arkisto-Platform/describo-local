@@ -31,7 +31,7 @@ setup() {
 }
 
 start() {
-    [[ ! -d "${PWD}/describo-local" ]] && setup
+    [[ ! -d "${PWD}/describo-local" ]] && setup && cd ..
 	cd describo-local
     docker-compose up -d
     sleep 5
@@ -79,7 +79,7 @@ cat <<EOF
 
     To update describo do (whilst not running):
      - $0 update
-     
+
 EOF
 }
 
