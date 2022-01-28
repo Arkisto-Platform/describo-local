@@ -9,3 +9,11 @@ curl --silent --output run-describo.sh https://raw.githubusercontent.com/Arkisto
   chmod +x run-describo.sh && \
   ./run-describo.sh start
 ```
+
+## For the adventurous
+
+**STOP! THIS COMES WITH NO GUARANTEES THAT YOU WON'T LOSE YOUR DATA**
+
+You can mount into the environment some other folder you have access to by editing the file
+`describo-local/.env` and putting in the path to the folder you want access to. Be sure to use a
+fully qualified path docker is configured to mount as a volume.

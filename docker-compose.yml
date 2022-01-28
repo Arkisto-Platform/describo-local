@@ -17,7 +17,7 @@ services:
             PGDATA: /postgresql/data
         volumes:
             - database_volume:/postgresql
-    
+
     reva:
         image: arkisto/describo-reva
         hostname: reva-gateway
@@ -28,7 +28,7 @@ services:
             NODE_ENV: "development"
         volumes:
             - ./reva-configuration:/etc/revad
-            - ${DATA}:/var/tmp/reva
+            - ${DATA}:/var/tmp/reva/data/admin
         command: bash -c "./revad --dev-dir /etc/revad"
 
     api:
