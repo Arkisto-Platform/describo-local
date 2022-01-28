@@ -26,7 +26,7 @@ setup() {
     done
 
     echo "Setting up"
-    echo "DATA=\"./\"" > ./.env
+    echo "DATA=\"./data\"" > ./.env
     mkdir -p ./data/admin/test
     mkdir -p ./profiles
 }
