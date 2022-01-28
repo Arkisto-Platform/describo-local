@@ -33,7 +33,8 @@ setup() {
 start() {
     [[ ! -d "${PWD}/describo-local" ]] && setup
 	cd describo-local
-    docker-compose up 
+    docker-compose up -d
+    sleep 5
 }
 
 stop() {
@@ -43,7 +44,6 @@ stop() {
 }
 
 message() {
-
 cat <<EOF
 
     This script will run a local version of the Describo application on your
@@ -60,6 +60,26 @@ if [ $response != "y" ]; then
 fi
 }
 
+
+message_started() {
+cat <<EOF
+
+    Describo is now running at http://localhost (open up a browser and type that in).
+
+    Log in with:
+     - username: admin
+     - password: admin
+
+    The folder available inside describo is:
+     - $PWD/data/admin
+
+    You can copy files and folders into there and then annotate them inside describo.
+
+    When you're done, stop describo with:
+     - $0 stop
+EOF
+}
+
 if [ -z $(which docker) ] ; then
     echo "Can't find docker. Is it installed? Exiting."
     exit -1
@@ -74,6 +94,7 @@ case "$1" in
     start)
         message
         start
+        message_started
         ;;
     stop)
         stop
