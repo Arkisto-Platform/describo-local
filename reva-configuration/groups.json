@@ -1,0 +1,20 @@
+[
+    {
+        "id": {
+            "opaque_id": "users",
+            "idp": "localhost:20080"
+        },
+        "group_name": "users",
+        "mail": "users@example.org",
+        "display_name": "users",
+        "gid_number": 123,
+        "members": [
+            {
+                "id": {
+                    "opaque_id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
+                    "idp": "localhost:20080"
+                }
+            }
+        ]
+    }
+]

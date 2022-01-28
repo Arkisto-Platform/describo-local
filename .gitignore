@@ -1,0 +1,11 @@
+.shadow
+.uploads
+data
+tmp
+appauth.json
+localhomefs.db
+ocm-invites.json
+ocm-shares.json
+publicshares
+shares.json
+.env
