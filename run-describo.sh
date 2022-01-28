@@ -76,10 +76,13 @@ cat <<EOF
     You can copy files and folders into there and then annotate them inside describo.
 
     When you're done, stop describo with:
-     - $0 stop
+     - ./$0 stop
+
+    Next time - start it up with:
+    - ./$0 start
 
     To update describo do (whilst not running):
-     - $0 update
+     - ./$0 update
 
 EOF
 }
