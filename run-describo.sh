@@ -60,7 +60,6 @@ if [ $response != "y" ]; then
 fi
 }
 
-
 message_started() {
 cat <<EOF
 
@@ -77,6 +76,10 @@ cat <<EOF
 
     When you're done, stop describo with:
      - $0 stop
+
+    To update describo do (whilst not running):
+     - $0 update
+     
 EOF
 }
 
