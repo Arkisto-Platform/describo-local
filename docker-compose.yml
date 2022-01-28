@@ -3,7 +3,7 @@ version: "3.8"
 networks:
   default:
     external:
-      name: describo-online_default
+      name: describo-local_default
 
 volumes:
     database_volume:
