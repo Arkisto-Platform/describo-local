@@ -35,13 +35,13 @@ This will:
     You can copy files and folders into there and then annotate them inside describo.
 
     When you're done, stop describo with:
-     - $0 stop
+     - `./run-describo.sh stop`
 
     Next time - start it up with:
-    - $0 start
+    - `./run-describo.sh start`
 
     To update describo do (whilst not running):
-     - $0 update
+     - `./run-describo.sh` update
 
 
 
