@@ -2,7 +2,13 @@
 
 This repository is for setting up a local instance of Describo on your computer.
 
+## Prerequsites
+
+You must have Docker installed.
+
 ## Installation
+
+
 
 It is not necessary to clone this repository.
 
@@ -13,6 +19,32 @@ curl --silent --output run-describo.sh https://raw.githubusercontent.com/Arkisto
   chmod +x run-describo.sh && \
   ./run-describo.sh start
 ```
+
+This will:
+
+  - create a new sub directory `./describo-local` 
+  - create a script to start and stop Describo `run-describo.sh`
+  - Start Describo at <http://localhost> 
+    Log in with:
+     - username: admin
+     - password: admin
+
+    The folder available inside describo is in the describo-local directory:
+     -  ./describo-local/data/admin
+
+    You can copy files and folders into there and then annotate them inside describo.
+
+    When you're done, stop describo with:
+     - $0 stop
+
+    Next time - start it up with:
+    - $0 start
+
+    To update describo do (whilst not running):
+     - $0 update
+
+
+
 
 
 
