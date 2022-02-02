@@ -23,7 +23,7 @@ curl --silent --output run-describo.sh https://raw.githubusercontent.com/Arkisto
 This will:
 
   - create a new sub directory `./describo-local` 
-  - create a script to start and stop Describo `run-describo.sh`
+  - create a script to start and stop Describo `./run-describo.sh`
   - Start Describo at <http://localhost> 
     
     Log in with:
@@ -31,7 +31,7 @@ This will:
      - password: admin
 
     The folder available inside describo is in the describo-local directory:
-     -  ./describo-local/data/admin
+     -  `./describo-local/data/admin`
 
     You can copy files and folders into there and then annotate them inside describo.
 
