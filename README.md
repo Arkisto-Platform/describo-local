@@ -25,6 +25,7 @@ This will:
   - create a new sub directory `./describo-local` 
   - create a script to start and stop Describo `run-describo.sh`
   - Start Describo at <http://localhost> 
+    
     Log in with:
      - username: admin
      - password: admin
