@@ -2,9 +2,9 @@
     "ui": {
         "siteName": "Arkisto Platform - Describo",
         "logo": "http://www.researchobject.org/ro-crate/assets/img/ro-crate.svg",
-        "login": "reva",
+        "login": "localhost",
         "services": {
-            "reva": [{ "name": "My Computer", "gateway": "reva-gateway:19000", "mode": "api" }]
+            "localhost": true
         },
         "maxSessionLifetime": "86400",
         "maxEntitiesPerTemplate": "100"
