@@ -2,15 +2,9 @@
 
 GITHUB_RAW_ENDPOINT="https://raw.githubusercontent.com/Arkisto-Platform/describo-local/master"
 FILES="
-    run-describo.sh
     docker-compose.yml 
     describo-configuration.json 
     nginx.conf 
-    reva-configuration/gateway.toml 
-    reva-configuration/groups.json 
-    reva-configuration/ocm-providers.json 
-    reva-configuration/storage-home.toml 
-    reva-configuration/users.json
 "
 
 setup() {
@@ -26,8 +20,16 @@ setup() {
     done
 
     echo "Setting up"
-    echo "DATA=\"./data\"" > ./.env
-    mkdir -p ./data/admin/test
+    if [ -z $USER ] ; then
+        echo "$USER unset. Exiting."
+        exit -1
+    fi
+    if [ -z $HOME ] ; then
+        echo "$HOME unset. Exiting."
+        exit -1
+    fi
+    echo "HOME=\"$HOME\"" > ./.env
+    echo "USER=\"$USER\"" >> ./.env
     mkdir -p ./profiles
 }
 
@@ -112,7 +114,6 @@ case "$1" in
         echo "Updating images"
         docker pull -q arkisto/describo-online-api:latest
         docker pull -q arkisto/describo-online-ui:latest
-        docker pull -q arkisto/describo-reva:latest
         docker pull -q postgres:13-alpine
         ;;
     *)
