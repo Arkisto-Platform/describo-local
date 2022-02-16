@@ -86,7 +86,7 @@ cat <<EOF
     To update describo do (whilst not running):
      - $0 update
 
-     This script will make your home directory accessible inside describo.
+    This script will make your home directory accessible inside describo.
 
     **STOP! THIS COMES WITH NO GUARANTEES THAT YOU WON'T LOSE YOUR DATA**
 
