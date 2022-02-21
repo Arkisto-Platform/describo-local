@@ -29,6 +29,7 @@ services:
             DB_USER: "admin"
             DB_PASSWORD: "admin"
             DB_DATABASE: "describo"
+            ADMIN_PASSWORD: "adminpass"
         volumes:
             - ./describo-configuration.json:/srv/configuration.json
             - ./profiles:/srv/profiles
