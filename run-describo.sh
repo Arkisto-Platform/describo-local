@@ -58,7 +58,7 @@ cat <<EOF
 
 EOF
 read -p 'Do you want to continue? y|N ' response
-if [ $response != "y" ]; then
+if [ -z $response ] || [ $response != "y" ]; then
     exit
 fi
 }
