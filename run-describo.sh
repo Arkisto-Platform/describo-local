@@ -69,14 +69,8 @@ cat <<EOF
 
     Describo is now running at http://localhost (open up a browser and type that in).
 
-    Log in with:
-     - username: admin
-     - password: admin
-
-    The folder available inside describo is:
-     - $PWD/data/admin
-
-    You can copy files and folders into there and then annotate them inside describo.
+    Log in to the admin section with the password:
+     - adminpass
 
     When you're done, stop describo with:
      - $0 stop

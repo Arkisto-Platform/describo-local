@@ -24,28 +24,25 @@ This will:
 -   create a script to start and stop Describo `./run-describo.sh`
 -   Start Describo at <http://localhost>
 
-    Log in with:
+```
+Describo is now running at http://localhost (open up a browser and type that in).
 
-    -   username: admin
-    -   password: admin
+Log in to the admin section with the password:
+ - adminpass
 
-    The folder available inside describo is in the describo-local directory:
+When you're done, stop describo with:
+ - $0 stop
 
-    -   `./describo-local/data/admin`
+Next time - start it up with:
+- $0 start
 
-    You can copy files and folders into there and then annotate them inside describo.
+To update describo do (whilst not running):
+ - $0 update
 
-    When you're done, stop describo with:
+This script will make your home directory accessible inside describo.
 
-    -   `./run-describo.sh stop`
-
-    Next time - start it up with:
-
-    -   `./run-describo.sh start`
-
-    To update describo do (whilst not running):
-
-    -   `./run-describo.sh` update
+**STOP! THIS COMES WITH NO GUARANTEES THAT YOU WON'T LOSE YOUR DATA**
+```
 
 ## Data
 
