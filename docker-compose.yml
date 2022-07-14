@@ -23,7 +23,6 @@ services:
         hostname: api
         tty: true
         environment:
-            NODE_ENV: production
             TERM: "xterm-256color"
             DB_HOST: "db"
             DB_PORT: "5432"
@@ -32,8 +31,7 @@ services:
             DB_DATABASE: "describo"
             ADMIN_PASSWORD: "adminpass"
         volumes:
-            - ./describo-configuration.json:/srv/configuration.json
-            - ./profile.schema.json:/srv/profile.schema.json
+            - ./describo-configuration.json:/srv/api/configuration.json
             - ./profiles:/srv/profiles
             - $HOME:/home/$USER
 

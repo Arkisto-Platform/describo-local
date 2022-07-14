@@ -115,6 +115,9 @@ case "$1" in
         docker pull -q arkisto/describo-online-ui:latest
         docker pull -q postgres:13-alpine
         ;;
+    logs)
+       docker logs -f describo-local_api_1
+       ;;
     *)
        echo "Usage: $0 {start|stop|update}"
        ;;
